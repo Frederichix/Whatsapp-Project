@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Projeto Whatsapp</title>
+    <style>
+        :root {
+            --background-color: #111b21;
+            --beige: beige;
+            --top-color: #202C33;
+            --chat-color: #111B21;
+            --message-bar: #242626;
+        }
+
+        body {
+            background-color: var(--background-color);
+            margin: 0;
+        }
+
+        .main {
+            background-color: var(--background-color);
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #left-panel {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--background-color);
+            width: 30%;
+            height: 100%;
+        }
+        
+        #right-panel {
+            background-color: var(--background-color);
+            height: 100vh;
+            width: 70%;
+        }
+
+        #top-bar {
+            background-color: var(--top-color);
+            height: 57px;
+            width: 100%;
+            border-bottom: 1px solid white
+        }
+
+        #middle-bar {
+            background-color: var(--chat-color);
+            width: 100%;
+            height: 87px;
+            border-bottom: 1px solid white;
+        }
+
+        #chat {
+            background-color: var(--chat-color);
+            width: 100%;
+            height: 500px;
+        }
+
+        #top-bar-right {
+            background-color: var(--top-color);
+            width: 100%;
+            height: 57px;
+            border-bottom: 1px solid white;
+            border-left: 1px solid white;
+        }
+
+        #messages {
+            background-color: var(--background-color);
+            width: 100%;
+            height: 526px;
+            border-left: 1px solid white;
+        }
+
+        #footer { 
+            background-color: var(--top-color);
+            width: 100%;
+            height: 61px;
+            border-top: 1px solid white;
+            border-left: 1px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="left-panel">
+            <div id="top-bar"></div>
+            <div id="middle-bar"></div>
+            <div id="chat"></div>
+        </div>
+        <div id="right-panel">
+            <div id="top-bar-right"></div>
+            <div id="messages"></div>
+            <div id="footer"></div>
+        </div>
+    </div>
+</body>
+</html>
